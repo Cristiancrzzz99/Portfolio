@@ -1,0 +1,15 @@
+========================================================================
+CARPETA DE IMÁGENES DEL PORTFOLIO (UNIDAD 6)
+========================================================================
+
+Para agregar tu foto de perfil real:
+1. Elige una foto tuya en formato JPG o PNG.
+2. Nómbrala exactamente: foto-perfil.jpg
+3. Pégala dentro de esta carpeta (img/).
+4. ¡Listo! Al recargar index.html en tu navegador, tu foto aparecerá
+   automáticamente reemplazando el placeholder visual.
+
+Si no tienes una foto todavía, no te preocupes: el sitio web está 
+programado para mostrar un placeholder moderno y profesional con el
+texto "Tu foto aquí" sin romper el diseño.
+========================================================================

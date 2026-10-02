@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Cristian Cruz</title>
+    <!-- Favicon con emoji de clip 📎 -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📎</text></svg>">
+    <!-- Hoja de estilos externa principal -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ==========================================
+         ELEMENTOS DECORATIVOS DE FONDO (CANTIDAD DUPLICADA)
+         Variedad de colores vivos: rojo, verde, azul, violeta, amarillo y naranja
+         ========================================== -->
+    <div class="decoraciones-fondo" aria-hidden="true">
+        <!-- Globos flotantes multiplicados con colores vivos -->
+        <div class="forma forma-globo globo-rojo globo-1"><span class="globo-nudo"></span><span class="globo-cuerda"></span></div>
+        <div class="forma forma-globo globo-verde globo-2"><span class="globo-nudo"></span><span class="globo-cuerda"></span></div>
+        <div class="forma forma-globo globo-azul globo-3"><span class="globo-nudo"></span><span class="globo-cuerda"></span></div>
+        <div class="forma forma-globo globo-violeta globo-4"><span class="globo-nudo"></span><span class="globo-cuerda"></span></div>
+        <div class="forma forma-globo globo-amarillo globo-5"><span class="globo-nudo"></span><span class="globo-cuerda"></span></div>
+        <div class="forma forma-globo globo-naranja globo-6"><span class="globo-nudo"></span><span class="globo-cuerda"></span></div>
+        <div class="forma forma-globo globo-rojo globo-7"><span class="globo-nudo"></span><span class="globo-cuerda"></span></div>
+        <div class="forma forma-globo globo-azul globo-8"><span class="globo-nudo"></span><span class="globo-cuerda"></span></div>
+        <div class="forma forma-globo globo-verde globo-9"><span class="globo-nudo"></span><span class="globo-cuerda"></span></div>
+        <div class="forma forma-globo globo-violeta globo-10"><span class="globo-nudo"></span><span class="globo-cuerda"></span></div>
+        <div class="forma forma-globo globo-amarillo globo-11"><span class="globo-nudo"></span><span class="globo-cuerda"></span></div>
+        <div class="forma forma-globo globo-naranja globo-12"><span class="globo-nudo"></span><span class="globo-cuerda"></span></div>
+        <div class="forma forma-globo globo-azul globo-13"><span class="globo-nudo"></span><span class="globo-cuerda"></span></div>
+        <div class="forma forma-globo globo-verde globo-14"><span class="globo-nudo"></span><span class="globo-cuerda"></span></div>
+        <div class="forma forma-globo globo-rojo globo-15"><span class="globo-nudo"></span><span class="globo-cuerda"></span></div>
+        <div class="forma forma-globo globo-violeta globo-16"><span class="globo-nudo"></span><span class="globo-cuerda"></span></div>
+
+        <!-- Figuras geométricas flotantes multiplicadas -->
+        <span class="forma forma-circulo circulo-1"></span>
+        <span class="forma forma-circulo circulo-2"></span>
+        <span class="forma forma-circulo circulo-3"></span>
+        <span class="forma forma-circulo circulo-4"></span>
+        <span class="forma forma-circulo circulo-5"></span>
+        <span class="forma forma-circulo circulo-6"></span>
+
+        <span class="forma forma-confeti confeti-1"></span>
+        <span class="forma forma-confeti confeti-2"></span>
+        <span class="forma forma-confeti confeti-3"></span>
+        <span class="forma forma-confeti confeti-4"></span>
+        <span class="forma forma-confeti confeti-5"></span>
+        <span class="forma forma-confeti confeti-6"></span>
+        <span class="forma forma-confeti confeti-7"></span>
+        <span class="forma forma-confeti confeti-8"></span>
+
+        <span class="forma forma-bloque bloque-1"></span>
+        <span class="forma forma-bloque bloque-2"></span>
+        <span class="forma forma-bloque bloque-3"></span>
+        <span class="forma forma-bloque bloque-4"></span>
+    </div>
+
+    <!-- ==========================================
+         1. MENÚ DE NAVEGACIÓN SUPERIOR
+         ========================================== -->
+    <header class="header-navegacion">
+        <div class="nav-contenedor">
+            <!-- Marca/Logo: 'Portfolio de Cristian' -->
+            <a href="#inicio" class="logo" aria-label="Ir a inicio">
+                <span class="logo-icono">🚀</span>
+                <span class="logo-texto">Portfolio de Cristian</span>
+            </a>
+
+            <!-- Botón hamburguesa para dispositivos móviles -->
+            <button class="menu-hamburguesa" id="menu-toggle" aria-label="Abrir o cerrar menú de navegación" aria-expanded="false">
+                <span class="linea"></span>
+                <span class="linea"></span>
+                <span class="linea"></span>
+            </button>
+
+            <!-- Menú de navegación con enlaces y redes sociales oficiales a color -->
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-lista">
+                    <li><a href="#inicio" class="nav-enlace activo">Inicio</a></li>
+                    <li><a href="#sobre-mi" class="nav-enlace">Sobre mí</a></li>
+                    <li><a href="#conocimientos" class="nav-enlace">Conocimientos</a></li>
+                    <li><a href="#proyectos" class="nav-enlace">Proyectos</a></li>
+                    <li><a href="#contacto" class="nav-enlace">Contacto</a></li>
+                </ul>
+
+                <!-- Redes sociales oficiales a color justo al lado de Contacto -->
+                <div class="nav-redes" aria-label="Redes sociales oficiales">
+                    <!-- LinkedIn Oficial -->
+                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="nav-red-enlace nav-red-linkedin" aria-label="LinkedIn Oficial" title="LinkedIn Oficial">
+                        <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
+                            <rect width="24" height="24" rx="5" fill="#0A66C2"/>
+                            <path d="M5.5 9h3v10h-3V9zm1.5-5.5a1.75 1.75 0 100 3.5 1.75 1.75 0 000-3.5zM11 9h2.8v1.4h.04c.39-.74 1.34-1.52 2.76-1.52 2.95 0 3.5 1.94 3.5 4.47V19h-3v-4.9c0-1.17-.02-2.67-1.63-2.67-1.63 0-1.88 1.27-1.88 2.59V19H11V9z" fill="#FFFFFF"/>
+                        </svg>
+                    </a>
+                    <!-- Instagram Oficial con gradiente de marca original -->
+                    <a href="https://www.instagram.com/fffcrz97/" target="_blank" rel="noopener noreferrer" class="nav-red-enlace nav-red-instagram" aria-label="Instagram: @fffcrz97" title="Instagram: @fffcrz97">
+                        <svg viewBox="0 0 24 24" width="22" height="22">
+                            <defs>
+                                <linearGradient id="ig-nav-grad" x1="0%" y1="100%" x2="100%" y2="0%">
+                                    <stop offset="0%" stop-color="#FFD521"/>
+                                    <stop offset="20%" stop-color="#F50000"/>
+                                    <stop offset="40%" stop-color="#B900B4"/>
+                                    <stop offset="100%" stop-color="#5500FF"/>
+                                </linearGradient>
+                            </defs>
+                            <rect width="24" height="24" rx="6" fill="url(#ig-nav-grad)"/>
+                            <path d="M12 7a5 5 0 100 10 5 5 0 000-10zm0 8.2a3.2 3.2 0 110-6.4 3.2 3.2 0 010 6.4zm5.2-8.6a1.15 1.15 0 11-2.3 0 1.15 1.15 0 012.3 0z" fill="#FFFFFF"/>
+                            <rect x="3.5" y="3.5" width="17" height="17" rx="4.5" fill="none" stroke="#FFFFFF" stroke-width="1.6"/>
+                        </svg>
+                    </a>
+                    <!-- GitHub Oficial con logo vectorial oficial -->
+                    <a href="https://github.com/Cristiancrzzz99" target="_blank" rel="noopener noreferrer" class="nav-red-enlace nav-red-github" aria-label="GitHub: Cristiancrzzz99" title="GitHub: Cristiancrzzz99">
+                        <svg viewBox="0 0 24 24" width="22" height="22">
+                            <rect width="24" height="24" rx="5" fill="#181717"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 4C7.58 4 4 7.58 4 12c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0020 12c0-4.42-3.58-8-8-8z" fill="#FFFFFF"/>
+                        </svg>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- ==========================================
+             2. PRESENTACIÓN INICIAL (HERO)
+             Estructura invertida en un único cuadro blanco unificado:
+             Foto de perfil a la IZQUIERDA e Información a la DERECHA
+             ========================================== -->
+        <section id="inicio" class="seccion seccion-hero">
+            <div class="contenedor">
+                <div class="hero-contenedor">
+                    <!-- Tarjeta Izquierda Separada: Foto de Perfil -->
+                    <div class="hero-foto-tarjeta">
+                        <div class="foto-marco-decorativo">
+                            <div class="foto-contenedor">
+                                <img src="img/Foto de perfil.jpeg" alt="Foto de perfil de Cristian Cruz" id="foto-perfil" class="foto-imagen">
+                                <div id="foto-placeholder" class="foto-placeholder">
+                                    <div class="placeholder-icono-circulo">
+                                        <svg class="icono-usuario" viewBox="0 0 24 24" width="64" height="64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                            <circle cx="12" cy="7" r="4"></circle>
+                                        </svg>
+                                    </div>
+                                    <span class="placeholder-texto">Cristian Cruz</span>
+                                    <span class="placeholder-ruta">(img/Foto de perfil.jpeg)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta Derecha Separada: Información Descriptiva -->
+                    <div class="hero-texto-tarjeta">
+                        <div class="etiqueta-saludo">
+                            <span class="icono-destello">✨</span> Bienvenido a mi portfolio
+                        </div>
+
+                        <!-- Texto principal -->
+                        <h1 class="hero-texto-presentacion">
+                            Hola, soy Cristian y soy estudiante de TUP. Actualmente estoy explorando el mundo del desarrollo web y aprendiendo nuevas herramientas para crear proyectos.
+                        </h1>
+
+                        <!-- Puntos descriptivos -->
+                        <ul class="hero-lista-puntos">
+                            <li class="item-punto">
+                                <span class="punto-icono">🎓</span>
+                                <span class="punto-texto">Estudiante de UTN.</span>
+                            </li>
+                            <li class="item-punto">
+                                <span class="punto-icono">💻</span>
+                                <span class="punto-texto">Aprendiendo HTML, CSS, JavaScript y C#.</span>
+                            </li>
+                            <li class="item-punto">
+                                <span class="punto-icono">🎨</span>
+                                <span class="punto-texto">Interés por el diseño y las experiencias digitales.</span>
+                            </li>
+                            <li class="item-punto">
+                                <span class="punto-icono">🚀</span>
+                                <span class="punto-texto">En constante aprendizaje.</span>
+                            </li>
+                        </ul>
+
+                        <!-- Frase 'universo digital' ubicada debajo de la columna de texto de la derecha -->
+                        <div class="frase-universo-digital">
+                            <p class="linea-universo">Esto es un poco de mi aprendizaje en programacion.</p>
+                            <p class="linea-universo">Un lugar para compartir lo que aprendo, imagino y construyo.</p>
+                            <p class="linea-universo">Mi recorrido por el desarrollo web, los proyectos y la creatividad digital.</p>
+                        </div>
+
+                        <!-- Botones de navegación -->
+                        <div class="hero-botones">
+                            <a href="#proyectos" class="btn btn-principal">
+                                Conocer mis proyectos
+                                <svg class="icono-flecha" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </a>
+                            <a href="#contacto" class="btn btn-secundario">Contactame</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             3. SOBRE Mi
+             ========================================== -->
+        <section id="sobre-mi" class="seccion">
+            <div class="contenedor">
+                <div class="encabezado-seccion">
+                    <span class="insignia-seccion">Conóceme</span>
+                    <h2 class="titulo-seccion">Sobre mí</h2>
+                    <div class="linea-decorativa"></div>
+                </div>
+
+                <div class="tarjeta-sobre-mi">
+                    <p class="texto-sobre-mi">Hola, soy Cristian y soy estudiante de TUP. Actualmente estoy explorando el mundo del desarrollo web y aprendiendo nuevas herramientas para crear proyectos.</p>
+                    <p class="nota-provisional">
+                        <small><em>Formación en la Universidad Tecnológica Nacional Pacheco (UTN FRGP) — Desarrollo de software, bases de datos y diseño de aplicaciones web y de escritorio.</em></small>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             4. CONOCIMIENTOS (FONDO BLANCO CON LOGOS OFICIALES)
+             ========================================== -->
+        <section id="conocimientos" class="seccion seccion-conocimientos">
+            <div class="contenedor">
+                <!-- Contenedor principal con fondo totalmente BLANCO -->
+                <div class="bloque-conocimientos-blanco">
+                    <div class="encabezado-seccion encabezado-conocimientos">
+                        <span class="insignia-seccion">Habilidades</span>
+                        <h2 class="titulo-seccion">Mis Conocimientos</h2>
+                        <div class="linea-decorativa"></div>
+                        <p class="descripcion-seccion">Tecnologías y herramientas que utilizo en mi formación y proyectos de desarrollo, identificadas con sus logos oficiales.</p>
+                    </div>
+
+                    <div class="rejilla-conocimientos">
+                        <!-- 1. HTML5 -->
+                        <article class="tarjeta-conocimiento">
+                            <img src="img/html.png" alt="HTML5" class="logo-conocimiento-img">
+                        </article>
+
+                        <!-- 2. CSS3 -->
+                        <article class="tarjeta-conocimiento">
+                            <img src="img/css.png" alt="CSS3" class="logo-conocimiento-img">
+                        </article>
+
+                        <!-- 3. JavaScript -->
+                        <article class="tarjeta-conocimiento">
+                            <img src="img/javascript.png" alt="JavaScript" class="logo-conocimiento-img">
+                        </article>
+
+                        <!-- 4. C++ -->
+                        <article class="tarjeta-conocimiento">
+                            <img src="img/cpp.png" alt="C++" class="logo-conocimiento-img">
+                        </article>
+
+                        <!-- 5. C# -->
+                        <article class="tarjeta-conocimiento">
+                            <img src="img/csharp.png" alt="C#" class="logo-conocimiento-img">
+                        </article>
+
+                        <!-- 6. SQL Server / MySQL -->
+                        <article class="tarjeta-conocimiento">
+                            <img src="img/sql.png" alt="SQL Server" class="logo-conocimiento-img">
+                        </article>
+
+                        <!-- 7. Git -->
+                        <article class="tarjeta-conocimiento">
+                            <img src="img/git.png" alt="Git" class="logo-conocimiento-img">
+                        </article>
+
+                        <!-- 8. GitHub -->
+                        <article class="tarjeta-conocimiento">
+                            <img src="img/github.png" alt="GitHub" class="logo-conocimiento-img">
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             5. PROYECTOS (EJEMPLOS / PLACEHOLDERS)
+             ========================================== -->
+        <section id="proyectos" class="seccion">
+            <div class="contenedor">
+                <div class="encabezado-seccion">
+                    <span class="insignia-seccion">Portafolio</span>
+                    <h2 class="titulo-seccion">Proyectos</h2>
+                    <div class="linea-decorativa"></div>
+                    <p class="descripcion-seccion">Proyectos académicos y de desarrollo que reflejan la aplicación práctica de mis conocimientos.</p>
+                </div>
+
+                <div class="rejilla-proyectos">
+                    <!-- Proyecto Ejemplo 1 -->
+                    <article class="tarjeta-proyecto">
+                        <div class="proyecto-cabecera cabecera-roja">
+                            <span class="insignia-placeholder">Proyecto Académico #1</span>
+                            <div class="icono-proyecto-decorativo">🎵</div>
+                        </div>
+                        <div class="proyecto-cuerpo">
+                            <h3 class="proyecto-titulo">Aplicación Musical en C++</h3>
+                            <p class="proyecto-descripcion">
+                                Aplicación desarrollada en C++, aprobada para el proyecto académico.
+                            </p>
+                            <div class="proyecto-tecnologias">
+                                <span class="tag-tech tag-cpp">C++</span>
+                                <span class="tag-tech tag-git">Git</span>
+                            </div>
+                            <div class="proyecto-pie">
+                                <button type="button" class="btn btn-proyecto" onclick="abrirModalProyecto('Aplicación Musical en C++', 'Aplicación desarrollada en C++, aprobada para el proyecto académico.', 'C++, Git')">
+                                    Ver proyecto
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Proyecto Ejemplo 2 -->
+                    <article class="tarjeta-proyecto">
+                        <div class="proyecto-cabecera cabecera-verde">
+                            <span class="insignia-placeholder">Proyecto Académico #2</span>
+                            <div class="icono-proyecto-decorativo">🖥️</div>
+                        </div>
+                        <div class="proyecto-cuerpo">
+                            <h3 class="proyecto-titulo">Proyecto WinForms (.NET / C#)</h3>
+                            <p class="proyecto-descripcion">
+                                Trabajo práctico desarrollado con Windows Forms.
+                            </p>
+                            <div class="proyecto-tecnologias">
+                                <span class="tag-tech tag-csharp">C#</span>
+                                <span class="tag-tech tag-dotnet">.NET</span>
+                                <span class="tag-tech tag-winforms">WinForms</span>
+                            </div>
+                            <div class="proyecto-pie">
+                                <button type="button" class="btn btn-proyecto" onclick="abrirModalProyecto('Proyecto WinForms (.NET / C#)', 'Trabajo práctico desarrollado con Windows Forms.', 'C#, .NET, Windows Forms')">
+                                    Ver proyecto
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Proyecto Ejemplo 3 (Solicitado por el usuario) -->
+                    <article class="tarjeta-proyecto">
+                        <div class="proyecto-cabecera cabecera-azul">
+                            <span class="insignia-placeholder">Proyecto Académico #3</span>
+                            <div class="icono-proyecto-decorativo">🏪</div>
+                        </div>
+                        <div class="proyecto-cuerpo">
+                            <h3 class="proyecto-titulo">Sistema de Gestión para Perfumería polirubro</h3>
+                            <p class="proyecto-descripcion">
+                                Proyecto de base de datos enfocado en el desarrollo e implementación del modelo para una perfumería, integrado con SQL Server y MongoDB.
+                            </p>
+                            <div class="proyecto-tecnologias">
+                                <span class="tag-tech tag-sql">SQL Server</span>
+                                <span class="tag-tech tag-mongo">MongoDB</span>
+                                <span class="tag-tech tag-db">Base de Datos</span>
+                            </div>
+                            <div class="proyecto-pie">
+                                <button type="button" class="btn btn-proyecto" onclick="abrirModalProyecto('Sistema de Gestión para Perfumería polirubro', 'Proyecto de base de datos enfocado en el desarrollo e implementación del modelo para una perfumería, integrado con SQL Server y MongoDB.', 'SQL Server, MongoDB, Modelado de Datos')">
+                                    Ver proyecto
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- ==========================================
+             6. FORMULARIO DE CONTACTO
+             ========================================== -->
+        <section id="contacto" class="seccion">
+            <div class="contenedor">
+                <div class="encabezado-seccion">
+                    <span class="insignia-seccion">Mensajes</span>
+                    <h2 class="titulo-seccion">Contacto</h2>
+                    <div class="linea-decorativa"></div>
+                    <p class="descripcion-seccion">¿Tienes alguna pregunta, propuesta o sugerencia? Completa el formulario y te responderé a la brevedad.</p>
+                </div>
+
+                <div class="tarjeta-contacto">
+                    <!-- Mensaje de confirmación (oculto por defecto, activado por JavaScript al validar) -->
+                    <div id="mensaje-exito" class="mensaje-exito" style="display: none;" role="alert">
+                        <div class="icono-exito">🎉</div>
+                        <div class="texto-exito">
+                            <h4>¡Mensaje enviado con éxito!</h4>
+                            <p>Los datos han sido validados correctamente. Esta es una simulación interactiva para la Unidad 6 (sin servidor de correo configurado).</p>
+                        </div>
+                        <button type="button" class="btn-cerrar-alerta" id="btn-cerrar-alerta" aria-label="Cerrar notificación">&times;</button>
+                    </div>
+
+                    <!-- Formulario de contacto -->
+                    <form id="formulario-contacto" class="formulario-contacto" novalidate>
+                        <!-- Campo: Nombre -->
+                        <div class="grupo-campo">
+                            <label for="nombre" class="etiqueta-campo">Nombre completo <span class="campo-obligatorio">*</span></label>
+                            <input type="text" id="nombre" name="nombre" class="input-campo" placeholder="Ej. Juan Pérez" autocomplete="name">
+                            <span class="mensaje-error" id="error-nombre"></span>
+                        </div>
+
+                        <!-- Campo: Email -->
+                        <div class="grupo-campo">
+                            <label for="email" class="etiqueta-campo">Correo electrónico <span class="campo-obligatorio">*</span></label>
+                            <input type="email" id="email" name="email" class="input-campo" placeholder="Ej. juan.perez@correo.com" autocomplete="email">
+                            <span class="mensaje-error" id="error-email"></span>
+                        </div>
+
+                        <!-- Campo: Mensaje -->
+                        <div class="grupo-campo">
+                            <label for="mensaje" class="etiqueta-campo">Mensaje <span class="campo-obligatorio">*</span></label>
+                            <textarea id="mensaje" name="mensaje" rows="5" class="input-campo textarea-campo" placeholder="Escribe tu mensaje aquí (mínimo 10 caracteres)..."></textarea>
+                            <span class="mensaje-error" id="error-mensaje"></span>
+                        </div>
+
+                        <!-- Botón Enviar -->
+                        <div class="grupo-boton">
+                            <button type="submit" class="btn btn-principal btn-enviar" id="btn-enviar">
+                                <span>Enviar Mensaje</span>
+                                <svg class="icono-enviar" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==========================================
+         VENTANA MODAL PARA DETALLES DE PROYECTO
+         (Activada mediante JavaScript con el botón 'Ver proyecto')
+         ========================================== -->
+    <div id="modal-proyecto" class="modal-fondo" style="display: none;" role="dialog" aria-modal="true" aria-labelledby="modal-titulo">
+        <div class="modal-tarjeta">
+            <button type="button" class="modal-cerrar" id="btn-cerrar-modal" aria-label="Cerrar ventana">&times;</button>
+            <div class="modal-icono">🚀</div>
+            <span class="insignia-placeholder">Detalle de Proyecto</span>
+            <h3 id="modal-titulo" class="modal-titulo">Título del Proyecto</h3>
+            <p id="modal-descripcion" class="modal-descripcion">Descripción del proyecto de ejemplo.</p>
+            <div class="modal-tecnologias-caja">
+                <strong>Tecnologías utilizadas:</strong>
+                <p id="modal-tecnologias" class="modal-tecnologias"></p>
+            </div>
+            <div class="modal-botones">
+                <button type="button" class="btn btn-principal" id="btn-entendido-modal">¡Entendido!</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==========================================
+         PIE DE PÁGINA (FOOTER) Y REDES SOCIALES DISCRETAS
+         Al final absoluto de la página
+         ========================================== -->
+    <footer class="pie-pagina">
+        <div class="contenedor pie-contenedor">
+            <p class="pie-texto">
+                &copy; 2026 <strong>Portfolio Académico</strong> — Unidad 6. Desarrollado con <strong>HTML5, CSS3 y JavaScript</strong>.
+            </p>
+
+            <!-- Redes sociales discretas al final absoluto de la página -->
+            <div class="pie-redes" aria-label="Redes sociales personales">
+                <!-- Enlace oficial de LinkedIn -->
+                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="red-item" aria-label="Perfil oficial de LinkedIn" title="LinkedIn Oficial">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                    </svg>
+                </a>
+
+                <!-- Perfil real de Instagram -->
+                <a href="https://www.instagram.com/fffcrz97/" target="_blank" rel="noopener noreferrer" class="red-item" aria-label="Perfil de Instagram de Cristian Cruz" title="Instagram: @fffcrz97">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                    </svg>
+                </a>
+
+                <!-- Perfil real de GitHub -->
+                <a href="https://github.com/Cristiancrzzz99" target="_blank" rel="noopener noreferrer" class="red-item" aria-label="Perfil de GitHub de Cristian Cruz" title="GitHub: Cristiancrzzz99">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                </a>
+            </div>
+
+            <a href="#inicio" class="enlace-arriba" aria-label="Volver al inicio">
+                <span>Ir arriba</span> ↑
+            </a>
+        </div>
+    </footer>
+
+    <!-- Archivo de JavaScript externo -->
+    <script src="script.js"></script>
+</body>
+</html>
