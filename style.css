@@ -657,19 +657,13 @@ body {
     align-items: stretch;
 }
 
-/* Tarjeta izquierda independiente para la foto */
-.hero-foto-tarjeta {
-    background: #FFFFFF;
-    border-radius: 28px;
-    padding: 3rem 2rem;
-    box-shadow: var(--sombra-tarjeta);
-    border: 3px solid rgba(255, 255, 255, 0.9);
-    position: relative;
-    overflow: hidden;
+/* Área izquierda independiente para la foto (sin tarjeta blanca detrás) */
+.hero-foto-area {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 /* Tarjeta derecha independiente para el texto */
@@ -687,7 +681,6 @@ body {
 }
 
 /* Borde/línea superior decorativa combinando únicamente Azul, Verde y Rojo */
-.hero-foto-tarjeta::before,
 .hero-texto-tarjeta::before {
     content: '';
     position: absolute;
@@ -698,9 +691,20 @@ body {
     background: linear-gradient(90deg, #0830C2 0%, #009900 50%, #8B0000 100%);
 }
 
+/* Marco circular decorativo con degradado que combina únicamente Azul, Verde y Rojo */
 .foto-marco-decorativo {
     position: relative;
-    padding: 6px;
+    padding: 7px;
+    border-radius: 50%;
+    background: conic-gradient(from 180deg at 50% 50%, #0830C2 0%, #009900 35%, #8B0000 70%, #0830C2 100%);
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.22);
+    transition: transform var(--transicion-suave), box-shadow var(--transicion-suave);
+    display: inline-block;
+}
+
+.foto-marco-decorativo:hover {
+    transform: scale(1.04) rotate(2deg);
+    box-shadow: 0 20px 44px rgba(0, 0, 0, 0.3);
 }
 
 .foto-contenedor {
@@ -708,19 +712,12 @@ body {
     height: 240px;
     border-radius: 50%;
     background: var(--color-blanco);
-    border: 6px solid var(--color-blanco);
-    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.18), 0 0 0 4px #0830C2;
+    border: 4px solid #FFFFFF;
     overflow: hidden;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: transform var(--transicion-suave), box-shadow var(--transicion-suave);
-}
-
-.foto-contenedor:hover {
-    transform: scale(1.03) rotate(1deg);
-    box-shadow: 0 18px 38px rgba(0, 0, 0, 0.24), 0 0 0 6px #0830C2;
 }
 
 .foto-imagen {
@@ -998,51 +995,72 @@ body {
 .encabezado-conocimientos {
     background: transparent;
     box-shadow: none;
-    padding: 0 0 2.5rem 0;
+    padding: 0 0 2rem 0;
     margin-bottom: 0;
 }
 
-.rejilla-conocimientos {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1.5rem;
+/* Línea decorativa debajo del título 'Mis Conocimientos': degradado de solo Azul, Verde y Rojo */
+.linea-decorativa-conocimientos,
+.encabezado-conocimientos .linea-decorativa {
+    width: 75px;
+    height: 4px;
+    background: linear-gradient(90deg, #0830C2 0%, #009900 50%, #8B0000 100%);
+    margin: 0.6rem auto 1rem;
+    border-radius: 4px;
 }
 
-/* Tarjetas independientes con fondo blanco, bordes redondeados y logo oficial centrado */
-.tarjeta-conocimiento {
-    background: #FFFFFF;
-    border-radius: 18px;
-    padding: 1.8rem 1.2rem;
-    min-height: 125px;
-    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+/* Fila horizontal continua compacta de logos (sin tarjetas individuales ni sombras) */
+.fila-logos-horizontal {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2.2rem 2.8rem;
+    padding: 1.5rem 1rem 0.8rem 1rem;
+}
+
+/* Contenedor transparente de cada logo */
+.item-logo {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1.5px solid #E2E8F0;
-    transition: transform var(--transicion-suave), box-shadow var(--transicion-suave), border-color var(--transicion-suave);
+    padding: 0.4rem;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    transition: transform var(--transicion-suave);
     cursor: default;
 }
 
-.tarjeta-conocimiento:hover {
-    transform: translateY(-6px) scale(1.02);
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.12);
-    border-color: #CBD5E1;
+.item-logo:hover {
+    transform: translateY(-6px) scale(1.18);
 }
 
-/* Imagen del logo oficial de la tecnología limpia y centrada */
-.logo-conocimiento-img {
-    max-width: 68px;
-    max-height: 68px;
+.enlace-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Logos oficiales limpios y transparentes sobre el fondo del contenedor blanco */
+.logo-tecnologia-fila {
+    height: 56px;
     width: auto;
-    height: auto;
+    max-width: 80px;
     object-fit: contain;
     display: block;
-    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.08));
-    transition: transform var(--transicion-rapida);
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.08));
+    transition: transform var(--transicion-rapida), filter var(--transicion-rapida);
 }
 
-.tarjeta-conocimiento:hover .logo-conocimiento-img {
-    transform: scale(1.12);
+.item-logo:hover .logo-tecnologia-fila {
+    filter: drop-shadow(0 10px 18px rgba(0, 0, 0, 0.2));
 }
 
 /* --------------------------------------------------------------------------
@@ -1532,14 +1550,14 @@ body {
         padding: 0.8rem 1rem;
     }
 
-    /* Reorganización de las tarjetas de Hero a una columna en móviles */
+    /* Reorganización de la sección Hero a una columna en móviles */
     .hero-contenedor {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
 
-    .hero-foto-tarjeta {
-        padding: 2.5rem 1.5rem;
+    .hero-foto-area {
+        padding: 1.5rem 1rem;
     }
 
     .hero-texto-tarjeta {
@@ -1588,9 +1606,13 @@ body {
         border-radius: 22px;
     }
 
-    .rejilla-conocimientos {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1.1rem;
+    .fila-logos-horizontal {
+        gap: 1.5rem 1.8rem;
+    }
+
+    .logo-tecnologia-fila {
+        height: 48px;
+        max-width: 65px;
     }
 
     .pie-contenedor {
@@ -1618,8 +1640,8 @@ body {
         font-size: 1.25rem;
     }
 
-    .hero-foto-tarjeta {
-        padding: 2rem 1.2rem;
+    .hero-foto-area {
+        padding: 1rem 0.5rem;
     }
 
     .hero-texto-tarjeta {
@@ -1627,8 +1649,8 @@ body {
     }
 
     .foto-contenedor {
-        width: 200px;
-        height: 200px;
+        width: 190px;
+        height: 190px;
     }
 
     .bloque-conocimientos-blanco,
@@ -1637,19 +1659,13 @@ body {
         border-radius: 18px;
     }
 
-    .rejilla-conocimientos {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 0.85rem;
+    .fila-logos-horizontal {
+        gap: 1.2rem 1.4rem;
     }
 
-    .tarjeta-conocimiento {
-        padding: 1.2rem 0.8rem;
-        min-height: 105px;
-    }
-
-    .logo-conocimiento-img {
-        max-width: 54px;
-        max-height: 54px;
+    .logo-tecnologia-fila {
+        height: 42px;
+        max-width: 58px;
     }
 
     .placeholder-icono-circulo {

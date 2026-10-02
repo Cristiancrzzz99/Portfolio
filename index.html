@@ -131,11 +131,11 @@
         <section id="inicio" class="seccion seccion-hero">
             <div class="contenedor">
                 <div class="hero-contenedor">
-                    <!-- Tarjeta Izquierda Separada: Foto de Perfil -->
-                    <div class="hero-foto-tarjeta">
+                    <!-- Área Izquierda: Foto de Perfil (Sin tarjeta blanca detrás) -->
+                    <div class="hero-foto-area">
                         <div class="foto-marco-decorativo">
                             <div class="foto-contenedor">
-                                <img src="img/Foto de perfil.jpeg" alt="Foto de perfil de Cristian Cruz" id="foto-perfil" class="foto-imagen">
+                                <img src="./img/foto-perfil.jpeg" alt="Foto de perfil de Cristian Cruz" id="foto-perfil" class="foto-imagen">
                                 <div id="foto-placeholder" class="foto-placeholder">
                                     <div class="placeholder-icono-circulo">
                                         <svg class="icono-usuario" viewBox="0 0 24 24" width="64" height="64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -144,7 +144,7 @@
                                         </svg>
                                     </div>
                                     <span class="placeholder-texto">Cristian Cruz</span>
-                                    <span class="placeholder-ruta">(img/Foto de perfil.jpeg)</span>
+                                    <span class="placeholder-ruta">(./img/foto-perfil.jpeg)</span>
                                 </div>
                             </div>
                         </div>
@@ -234,50 +234,58 @@
                     <div class="encabezado-seccion encabezado-conocimientos">
                         <span class="insignia-seccion">Habilidades</span>
                         <h2 class="titulo-seccion">Mis Conocimientos</h2>
-                        <div class="linea-decorativa"></div>
+                        <div class="linea-decorativa linea-decorativa-conocimientos"></div>
                         <p class="descripcion-seccion">Tecnologías y herramientas que utilizo en mi formación y proyectos de desarrollo, identificadas con sus logos oficiales.</p>
                     </div>
 
-                    <div class="rejilla-conocimientos">
+                    <!-- Fila continua horizontal compacta sin tarjetas individuales ni sombras -->
+                    <div class="fila-logos-horizontal" role="list" aria-label="Tecnologías principales">
                         <!-- 1. HTML5 -->
-                        <article class="tarjeta-conocimiento">
-                            <img src="img/html.png" alt="HTML5" class="logo-conocimiento-img">
-                        </article>
+                        <div class="item-logo" role="listitem" title="HTML5">
+                            <img src="./img/html.png" alt="HTML5" class="logo-tecnologia-fila">
+                        </div>
 
                         <!-- 2. CSS3 -->
-                        <article class="tarjeta-conocimiento">
-                            <img src="img/css.png" alt="CSS3" class="logo-conocimiento-img">
-                        </article>
+                        <div class="item-logo" role="listitem" title="CSS3">
+                            <img src="./img/css.png" alt="CSS3" class="logo-tecnologia-fila">
+                        </div>
 
                         <!-- 3. JavaScript -->
-                        <article class="tarjeta-conocimiento">
-                            <img src="img/javascript.png" alt="JavaScript" class="logo-conocimiento-img">
-                        </article>
+                        <div class="item-logo" role="listitem" title="JavaScript">
+                            <img src="./img/javascript.png" alt="JavaScript" class="logo-tecnologia-fila">
+                        </div>
 
                         <!-- 4. C++ -->
-                        <article class="tarjeta-conocimiento">
-                            <img src="img/cpp.png" alt="C++" class="logo-conocimiento-img">
-                        </article>
+                        <div class="item-logo" role="listitem" title="C++">
+                            <img src="./img/cpp.png" alt="C++" class="logo-tecnologia-fila">
+                        </div>
 
                         <!-- 5. C# -->
-                        <article class="tarjeta-conocimiento">
-                            <img src="img/csharp.png" alt="C#" class="logo-conocimiento-img">
-                        </article>
+                        <div class="item-logo" role="listitem" title="C#">
+                            <img src="./img/csharp.png" alt="C#" class="logo-tecnologia-fila">
+                        </div>
 
-                        <!-- 6. SQL Server / MySQL -->
-                        <article class="tarjeta-conocimiento">
-                            <img src="img/sql.png" alt="SQL Server" class="logo-conocimiento-img">
-                        </article>
+                        <!-- 6. SQL Server -->
+                        <div class="item-logo" role="listitem" title="SQL Server">
+                            <img src="./img/sql.png" alt="SQL Server" class="logo-tecnologia-fila">
+                        </div>
 
-                        <!-- 7. Git -->
-                        <article class="tarjeta-conocimiento">
-                            <img src="img/git.png" alt="Git" class="logo-conocimiento-img">
-                        </article>
+                        <!-- 7. MySQL Workbench (Recurso oficial https://www.mysql.com/) -->
+                        <div class="item-logo" role="listitem" title="MySQL Workbench">
+                            <a href="https://www.mysql.com/" target="_blank" rel="noopener noreferrer" class="enlace-logo" title="MySQL Workbench oficial (mysql.com)">
+                                <img src="./img/mysql.png" alt="MySQL Workbench" class="logo-tecnologia-fila">
+                            </a>
+                        </div>
 
-                        <!-- 8. GitHub -->
-                        <article class="tarjeta-conocimiento">
-                            <img src="img/github.png" alt="GitHub" class="logo-conocimiento-img">
-                        </article>
+                        <!-- 8. Git -->
+                        <div class="item-logo" role="listitem" title="Git">
+                            <img src="./img/git.png" alt="Git" class="logo-tecnologia-fila">
+                        </div>
+
+                        <!-- 9. GitHub -->
+                        <div class="item-logo" role="listitem" title="GitHub">
+                            <img src="./img/github.png" alt="GitHub" class="logo-tecnologia-fila">
+                        </div>
                     </div>
                 </div>
             </div>
